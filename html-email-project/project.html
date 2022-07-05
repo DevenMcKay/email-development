@@ -1,27 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- USED FOR DARK MODE -->
    <!-- <meta name="color-scheme" content="light dark">
    <meta name="supported-color-schemes" content="light dark"> -->
+
    <title>HTML Email Template Boilerplate</title>
    <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
 
       @media screen and (max-width: 599.98px) {}
 
       @media screen and (max-width: 399.98px) {}
 
       /* Custom Dark Mode Colors */
-
       @media (prefers-color-scheme: dark) {}
    </style>
+    
+   <!-- USED FOR MICROSOFT OFFICE 9 AND UP AND INTERNET EXPLORER -->
+   <!-- [if (gte mso9)| (IE)]> 
+      <style type="text/css">
+        table {
+         border-collapse: collapse!important;
+        }
+      </style>
+   <![endif]-->
+
 </head>
 
 <body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
+   <!-- USED FOR MICROSOFT OFFICE 9 AND UP AND INTERNET EXPLORER -->
    <!-- [if (gte mso9)| (IE)]> 
       <style type="text/css">
          body {
@@ -33,51 +62,120 @@
 
    <center style="width: 100%; table-layout: fixed; padding-bottom: 40px;">
       <div style="max-width: 600px; background-color: #fafdfe;box-shadow: 0 0 10px rgba(0,0,0,.8);">
-            
-            <!--  Pre-header shows email preview (remove comments prior to submit)-->
-            <div style="font-size: 0px; color: #fafdfe; line-height: 1px;
-               mso-line-height-rule:exactly; display: none; max-width: 0px;
-               max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
-               This is our Pre-header text! SALE SALE 25% OFF!
-               <!-- Add Pre-header Text Here (85-100 characters in length) -->
-            </div>
-            <!--  Pre-header (remove comments prior to submit)-->
 
-            <!-- [if (gte mso9)| (IE)]> 
-               <style type="text/css">
-                  body {
-                     background-color:#dde0e1!important;}
-                     body, table, td, p, a {font-family:san-serif,Arial,
-                     Helvitica!important;}
-               </style>
-            <![endif]-->
-         <h1>Test</h1>
-         <!-- START SOCIAL ICONS -->
-         <!-- END SOCIAL ICONS -->
+         <!--  Pre-header shows email preview (remove comments prior to submit)-->
+         <div style="font-size: 0px; color: #fafdfe; line-height: 1px;
+            mso-line-height-rule:exactly; display: none; max-width: 0px;
+            max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+            <!-- Add Pre-header Text Here ((85-100 ~safe) (35-200 ~actual) range characters in length) -->
+            This is our Pre-header text! SALE SALE 25% OFF!
+         </div>
+         <!--  Pre-header (remove comments prior to submit)-->
 
-         <!-- START LOGO -->
-         <!-- END LOGO -->
+         <!-- USED FOR MICROSOFT OFFICE 9 AND UP AND INTERNET EXPLORER -->
+         <!-- [if (gte mso9)| (IE)]> 
+            <table width="600" align="center" style="border-spacing:0;color:#565656; role="presentation">
+               <tr>
+                  <td style="padding:0;">
+         <![endif]-->
 
-         <!-- START BANNER -->
-         <!-- END BANNER -->
+         <table align="center" style="border-spacing:0;color:#565656;font-family: 'Lato',san-serif,Arial,
+         Helvitica!important; background-color: #fafdfe; Margin: 0; padding: 0; width:100%; max-width: 600px;" role="presentation">
+<!-- START SOCIAL ICONS -->
+            <tr>
+               <td style="padding: 0;">
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                     <tr>
+                        <td height="2px" style="background-color: #21c6b8;">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #ebf5fa;text-align: center;padding: 10px 0 8px 0">
+                           <a href="http://facebook.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook" title="Facebook" width="32" border="0"></a>
+                           <a href="http://twitter.com" target="_blank"><img src="https://i.ibb.co/sRH7TK2/circle-twitter.png" alt="Twitter" title="Twitter" width="32" border="0"></a>
+                           <a href="http://youtube.com" target="_blank"><img src="https://i.ibb.co/VQ9nCv3/circle-youtube.png" alt="YouTube" title="YouTube" width="32" border="0"></a>
+                           <a href="http://linkedin.com" target="_blank"><img src="https://i.ibb.co/K5wbWBS/circle-linkedin.png" alt="LinkedIn" title="LinkedIn" width="32" border="0"></a>
+                           <a href="http://instagram.com" target="_blank"><img src="https://i.ibb.co/x8G1NMz/circle-instagram.png" alt="Instagram" title="Instagram" width="32" border="0"></a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td height="3px" style="background-color: #21c6b8;">
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+<!-- END SOCIAL ICONS -->
+<!-- START LOGO -->
+            <tr>
+               <td style="padding: 0;">
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                     <tr>
+                        <td style="background-color: #fefdfe;padding: 20px 0 20px 0; text-align: center;">
+                           <a href="https://example.com"><img src="https://i.ibb.co/rx31TX7/html-email.png" alt="Title" width="280" border="0"></a>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+<!-- END LOGO -->
+<!-- START BANNER -->
+            <tr>
+               <td background="https://i.ibb.co/hMhVbjT/stats2.gif" width="600" height="332" style="background-position: center top;">
+               <!-- [if (gte mso9)| (IE)]> 
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stoke="false"
+                  style="width:600px;height:332px">
+                     <v:fill type="tile" src="https://i.ibb.co/hMhVbjT/stats2.gif"/>
+                     <v:textbox inset="0,0,0,0">
+               <![endif]-->
+               
+               <table class="darkmode-transparent" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                     <td width="600" align="center" valign="middle">
+                        <table class="darkmode-transparent" cellpadding="0" cellspacing="0" role="presentation">
+                           <tr>
+                              <td align="center">
+                                 <table class="darkmode-transparent" role="presentation">
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
 
-         <!-- START TWO COLUMNS -->
-         <!-- END TWO COLUMNS -->
+               <!-- [if (gte mso9)| (IE)]> 
+                     </v:textbox>
+                  </v:rect>
+               <![endif]-->
+               </td>
+            </tr>
+<!-- END BANNER -->
 
-         <!-- START TWO THIRDS COLUMNS -->
-         <!-- END TWO THIRDS COLUMNS -->
+<!-- START TWO COLUMNS -->
+<!-- END TWO COLUMNS -->
 
-         <!-- START THREE COLUMNS -->
-         <!-- END THREE COLUMNS -->
+<!-- START TWO THIRDS COLUMNS -->
+<!-- END TWO THIRDS COLUMNS -->
 
-         <!-- START FOUR COLUMNS -->
-         <!-- END FOUR COLUMNS -->
+<!-- START THREE COLUMNS -->
+<!-- END THREE COLUMNS -->
 
-         <!-- START GREEN BORDER -->
-         <!-- END GREEN BORDER -->
+<!-- START FOUR COLUMNS -->
+<!-- END FOUR COLUMNS -->
 
-         <!-- START FOOTER -->
-         <!-- END FOOTER -->
+<!-- START GREEN BORDER -->
+<!-- END GREEN BORDER -->
+
+<!-- START FOOTER -->
+<!-- END FOOTER -->
+         
+         </table>
+         <!-- [if (gte mso9)| (IE)]> 
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
 
       </div>
    </center>
